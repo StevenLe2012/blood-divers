@@ -14,8 +14,8 @@ namespace Cells
         public bool twoHand = false;
         void Start()
         {
-            GameObject CellClone = Instantiate(CellOriginal);
-            CellList.Add(CellClone);
+            //GameObject CellClone = Instantiate(CellOriginal);
+            //CellList.Add(CellClone);
         }
 
         // Update is called once per frame
