@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a61646-cf54-4417-8213-97249ba3d4cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HUD Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HUD Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treehacks-hackathon-23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treehacks-hackathon-23/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TextUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/TextUpdate.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\emman\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\emman\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\emman\\AppData\\Local\\Symbols\\src"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23 -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -64,7 +80,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676755781463</updated>
-      <workItem from="1676755787253" duration="1488000" />
+      <workItem from="1676755787253" duration="2195000" />
+      <workItem from="1676758056963" duration="44000" />
     </task>
     <servers />
   </component>
