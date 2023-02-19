@@ -11,18 +11,13 @@ namespace CellSpawning
         //[SerializeField] private Transform[] spawnPoints;
         [SerializeField] private GameObject[] cellTypes;
         [SerializeField] private float averageTimeToSpawn = 1f;
-        [SerializeField] private Vector3 velocity;
+        // [SerializeField] private Vector3 velocity;
         [SerializeField] private float speed;
-        [SerializeField] private Quaternion rotation;
+        // [SerializeField] private Quaternion rotation;
         
         [SerializeField] public BoxCollider col;
         //public float TotalTargets = 5;
-
-        public float HeartBeatNum;
-
-        private float normalizedHeartBeatMultiplier = 1f;
-
-        private const float NORMAL_ARDUINO_HEARTBEAT_NUM = 100;
+        // private float normalizedHeartBeatMultiplier = 1f;
 
         private void Start()
         {
@@ -31,10 +26,15 @@ namespace CellSpawning
 
         private IEnumerator SpawnEnemyCoroutine()
         {
+            var normalizedBPM = ReadPort.Instance.GetNormalizeBPM();
+            if (normalizedBPM == 0)
+            {
+                normalizedBPM = 1;
+            }
             // set to while game running
             while (true)
             {
-                var timeBetweenNextSpawn = averageTimeToSpawn * normalizedHeartBeatMultiplier;
+                var timeBetweenNextSpawn = averageTimeToSpawn * normalizedBPM;
                 yield return new WaitForSeconds(timeBetweenNextSpawn);
                 SpawnCell();
             }

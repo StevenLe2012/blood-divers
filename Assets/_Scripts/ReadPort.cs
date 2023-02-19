@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
-using UnityEditor.TerrainTools;
+// using UnityEditor.TerrainTools;
 
 public class ReadPort : MonoBehaviour
 {   
@@ -58,5 +58,10 @@ public class ReadPort : MonoBehaviour
     public int GetBPM()
     {
         return BPM;
+    }
+    
+    public float GetNormalizeBPM()
+    {
+        return (float)(Math.Sqrt(BPM / 40f)) * 1.5f;
     }
 }
