@@ -15,6 +15,8 @@ public class TwoHandGrabInteractable : XRGrabInteractable
     // Start is called before the first frame update
     void Start()
     {
+        // Account for pre existing Cell
+        cellObjects.Add(GameObject.Find("Cell Grabbable"));
         foreach (var item in secondHandGrabPoints)
         {
             item.onSelectEntered.AddListener(OnSecondHandGrab);

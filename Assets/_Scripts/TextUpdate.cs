@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,16 +17,16 @@ namespace HeadsUpDisplay {
         
         void Start()
         {
-            // Delay Text Update by 2 seconds
-            StartCoroutine(Countdown2());
-            
             // Text Mesh Pro 
             textObject = GameObject.Find("HUD-Text");
             textObject.SetActive(true);
             myTxt = textObject.GetComponent<TextMeshProUGUI>();
             string str = "";
-            str += "<b>Move your arms in a swimming motion</b>";
+            str += "<b>Welcome to [app name?]</b>";
             myTxt.text = str;
+            
+            // // Delay Text Update by 2 seconds
+            // StartCoroutine(Countdown2());
         }
 
         // Update is called once per frame
@@ -36,17 +37,17 @@ namespace HeadsUpDisplay {
 
             // Access Two Hand Script Cell List
             cellObjectsUpdated = TwoHandGrabScript.cellObjects;
-
+            
             int cellCount = cellObjectsUpdated.Count;
 
             if (cellCount > tempCount)
             {
-                string str = cellCount.ToString();
+                var str = cellCount.ToString();
                 myTxt.text = str;
                 tempCount = cellCount;
             }
         }
-        
+
         private IEnumerator Countdown2() {
             while(true) {
                 yield return new WaitForSeconds(2); //wait 3 seconds
