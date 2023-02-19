@@ -9,12 +9,13 @@ namespace HeadsUpDisplay
     {
         public GameObject prefabObject;
         public GameObject cameraObject;
-        private Vector3 offset = new Vector3(.25f, .1f, .75f);
+        private Vector3 offset = new Vector3(0f, -.2f, .3f);
 
         // Start is called before the first frame update
         void Start()
         {
-            Instantiate(prefabObject, cameraObject.transform);
+            GameObject instance = Instantiate(prefabObject, cameraObject.transform);
+            instance.transform.position += offset;
         }
     }
 }
