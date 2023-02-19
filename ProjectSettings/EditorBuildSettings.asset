@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Proliferation Scene.unity
     guid: 2d15b2ee756a0cd42b10c8a9d0857adf
   - enabled: 1
-    path: Assets/Scenes/BloodPumping.unity
-    guid: 4050756f296c4ba45a24695cd9a143b6
+    path: Assets/Scenes/HUD_Proliferation.unity
+    guid: 7d9b7c06ae945484eb939e28c5927148
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
