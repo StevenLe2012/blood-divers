@@ -6,11 +6,15 @@ public class CellReplacement : MonoBehaviour
 {
     [SerializeField] private GameObject brokenCell;
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "cell") {
-            Destroy(collision.gameObject);
+        print("Someone has entered:");
+        print(other.gameObject.name);
+        if (other.gameObject.CompareTag("cell")) {
+            print("Cell Entered");
+            Destroy(other.gameObject);
             brokenCell.GetComponent<SkinnedMeshRenderer>().enabled = true;
+            Destroy(this.gameObject);
         }
     }
 }
