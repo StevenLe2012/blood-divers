@@ -26,10 +26,21 @@ public class ReadPort : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sp.Open();
+        try
+        {
+            sp.Open();
+
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e);
+        }
+        
+        
         sp.DtrEnable = true;
         sp.RtsEnable = true;
         StartCoroutine(Coroutine());
+        
     }
     
     IEnumerator Coroutine()
@@ -57,11 +68,19 @@ public class ReadPort : MonoBehaviour
     
     public int GetBPM()
     {
+        if (!sp.IsOpen)
+        {
+            return 0;
+        }
         return BPM;
     }
     
     public float GetNormalizeBPM()
     {
+        if (!sp.IsOpen)
+        {
+            return 1;
+        }
         return (float)(Math.Sqrt(BPM / 40f)) * 1.5f;
     }
 }
