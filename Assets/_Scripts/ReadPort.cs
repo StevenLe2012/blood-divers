@@ -57,11 +57,19 @@ public class ReadPort : MonoBehaviour
     
     public int GetBPM()
     {
+        if (!sp.IsOpen)
+        {
+            return 0;
+        }
         return BPM;
     }
     
     public float GetNormalizeBPM()
     {
+        if (!sp.IsOpen)
+        {
+            return 1;
+        }
         return (float)(Math.Sqrt(BPM / 40f)) * 1.5f;
     }
 }

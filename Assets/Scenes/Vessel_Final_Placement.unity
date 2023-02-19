@@ -1240,7 +1240,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec2b9ab2be8026e48a7e852714eb5a6c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.67
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec2b9ab2be8026e48a7e852714eb5a6c,
         type: 3}
@@ -1250,7 +1250,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ec2b9ab2be8026e48a7e852714eb5a6c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 127.7
+      value: 196.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec2b9ab2be8026e48a7e852714eb5a6c,
         type: 3}
@@ -1301,6 +1301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec2b9ab2be8026e48a7e852714eb5a6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: cell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1535,7 +1540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff2be23f193b124ca594e60bb690b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoHandObject: {fileID: 603987366}
+  TwoHandObject: {fileID: 1812580719}
   cellObjectsUpdated: []
 --- !u!1001 &605997208
 PrefabInstance:
@@ -4950,7 +4955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468548154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -1, z: 0}
+  m_LocalPosition: {x: -0.25, y: -1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6246,6 +6251,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1812580719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2198055888976155094, guid: e9a715bc79b4cf44a822ef3a4db2c659,
+    type: 3}
+  m_PrefabInstance: {fileID: 949319679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1839797357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,6 +6806,7 @@ GameObject:
   - component: {fileID: 2031356406}
   - component: {fileID: 2031356405}
   - component: {fileID: 2031356408}
+  - component: {fileID: 2031356409}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -6810,7 +6822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031356403}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -2, z: 0}
+  m_LocalPosition: {x: -0.25, y: -2.305, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6901,6 +6913,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brokenCell: {fileID: 605997209}
+--- !u!54 &2031356409
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031356403}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2087899979
 GameObject:
   m_ObjectHideFlags: 0
