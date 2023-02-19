@@ -54,7 +54,7 @@ namespace CellSpawning
                 var cell = Instantiate(cellType, spawnLocation.transform);
                 // cell.GetComponent<CellMovement>().SetVelocity(velocity);
                 cell.GetComponent<CellMovement>().SetSpeed(speed);
-                cell.GetComponent<CellMovement>().SetRotation(rotation);
+                // cell.GetComponent<CellMovement>().SetRotation(rotation);
                 cell.GetComponent<Rigidbody>().freezeRotation = false;
                 // cell.GetComponent<Rigidbody>().freezePosition = false;
             }
