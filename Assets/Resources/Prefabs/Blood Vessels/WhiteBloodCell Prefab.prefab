@@ -16,7 +16,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 45d7b141f0a30e04a957434ecd77c4ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.910176
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 45d7b141f0a30e04a957434ecd77c4ac,
         type: 3}
@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 45d7b141f0a30e04a957434ecd77c4ac,
         type: 3}
       propertyPath: m_Name
-      value: WhiteBloodCell Variant
+      value: WhiteBloodCell Prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
