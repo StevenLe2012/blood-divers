@@ -24,9 +24,6 @@ namespace HeadsUpDisplay {
             string str = "";
             str += "<b>Welcome to [app name?]</b>";
             myTxt.text = str;
-            
-            // // Delay Text Update by 2 seconds
-            // StartCoroutine(Countdown2());
         }
 
         // Update is called once per frame
@@ -42,19 +39,11 @@ namespace HeadsUpDisplay {
 
             if (cellCount > tempCount)
             {
-                var str = cellCount.ToString();
-                myTxt.text = str;
+                // var str = cellCount.ToString();
+                // myTxt.text = str;
                 tempCount = cellCount;
             }
         }
-
-        private IEnumerator Countdown2() {
-            while(true) {
-                yield return new WaitForSeconds(2); //wait 3 seconds
-                //do other thing
-            }
-        }
-
     }
 }
 
