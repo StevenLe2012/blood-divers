@@ -7,7 +7,7 @@ using UnityEditor.TerrainTools;
 
 public class ReadPort : MonoBehaviour
 {   
-    SerialPort sp = new SerialPort("COM4", 9600);
+    SerialPort sp = new SerialPort("COM3", 9600);
     [HideInInspector]
     public int BPM = 0;
     
@@ -27,6 +27,8 @@ public class ReadPort : MonoBehaviour
     void Start()
     {
         sp.Open();
+        sp.DtrEnable = true;
+        sp.RtsEnable = true;
     }
 
     // Update is called once per frame
@@ -34,13 +36,9 @@ public class ReadPort : MonoBehaviour
     {
         if (sp.IsOpen)
         {
-            try
-            {
-                BPM = Convert.ToInt32(sp.ReadLine());
-            }
-            catch (System.Exception) {
-                Debug.Log("system exception occured");
-            }
+            BPM = int.Parse(sp.ReadLine());
+            StartCoroutine(Coroutine());
+            Debug.Log(BPM);
         }
     }
 
@@ -48,4 +46,15 @@ public class ReadPort : MonoBehaviour
     // {
     //     return BPM;
     // }
+    IEnumerator Coroutine()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(15);
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+    }
 }
