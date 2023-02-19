@@ -92,9 +92,9 @@ namespace HeadsUpDisplay {
             str = "<b>Keep adding endothelial cells to speed up the healing</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(5);
-            str = "<b>Feel free to look around you as you work</b>";
+            str = "<b>Feel free to look around as you finish</b>";
             myTxt.text = str;
-            yield return new WaitForSecondsRealtime(7);
+            yield return new WaitForSecondsRealtime(15);
             str = "<b>You may notice other cells moving faster or slower</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(6);
