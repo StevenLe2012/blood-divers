@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SwimmingTest.unity
     guid: 092cb8ecfbd54fb408bf31f96072cb15
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HUD Scene.unity
     guid: b22b7d08c0ff95b4a92ebab9486c3d9c
   - enabled: 0
