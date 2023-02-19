@@ -77,16 +77,18 @@ namespace HeadsUpDisplay {
             str = "<b>Now also grab the cell with your left hand!</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(5);
-            str = "<b>This is an Endothelial Progenitor Cell, like a stem cell but different!</b>";
+            str = "<b>Look at that! The cell split! In fact it can keep spliting!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(6);
+            str = "<b>These cells can aid the internally ruptured blood vessel, and you can help!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(6);
+            str = "<b>Grab your cell and drag it into the rupture</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(8);
-            str = "<b>A progenitor cell can only become its target cell</b>";
-            myTxt.text = str;
-            yield return new WaitForSecondsRealtime(4);
-            str = "<b>In this case the Endothelial Cell!</b>";
+            str = "<b>A portion of the endothelial monolayer should have recovered!</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(5);
-            //str = "<b></b>";
         }
     }
 }
