@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GrabAndPlace.unity
+    guid: dd4b1c74ff1f24f4d9239afa587b6170
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -14,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HUD Scene.unity
     guid: b22b7d08c0ff95b4a92ebab9486c3d9c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Proliferation Scene.unity
     guid: 2d15b2ee756a0cd42b10c8a9d0857adf
   m_configObjects:
