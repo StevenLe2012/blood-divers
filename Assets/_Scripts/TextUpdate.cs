@@ -76,8 +76,17 @@ namespace HeadsUpDisplay {
             yield return new WaitForSecondsRealtime(5);
             str = "<b>Now also grab the cell with your left hand!</b>";
             myTxt.text = str;
-            //yield return new WaitForSecondsRealtime()
-
+            yield return new WaitForSecondsRealtime(5);
+            str = "<b>This is an Endothelial Progenitor Cell, like a stem cell but different!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(8);
+            str = "<b>A progenitor cell can only become its target cell</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(4);
+            str = "<b>In this case the Endothelial Cell!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(5);
+            //str = "<b></b>";
         }
     }
 }
