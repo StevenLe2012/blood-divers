@@ -76,8 +76,19 @@ namespace HeadsUpDisplay {
             yield return new WaitForSecondsRealtime(5);
             str = "<b>Now also grab the cell with your left hand!</b>";
             myTxt.text = str;
-            //yield return new WaitForSecondsRealtime()
-
+            yield return new WaitForSecondsRealtime(5);
+            str = "<b>Look at that! The cell split! In fact it can keep spliting!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(6);
+            str = "<b>These cells can aid the internally ruptured blood vessel, and you can help!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(6);
+            str = "<b>Grab your cell and drag it into the rupture</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(8);
+            str = "<b>A portion of the endothelial monolayer should have recovered!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(5);
         }
     }
 }
