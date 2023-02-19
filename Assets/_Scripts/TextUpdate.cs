@@ -21,9 +21,7 @@ namespace HeadsUpDisplay {
             textObject = GameObject.Find("HUD-Text");
             textObject.SetActive(true);
             myTxt = textObject.GetComponent<TextMeshProUGUI>();
-            string str = "";
-            str += "<b>Welcome to [app name?]</b>";
-            myTxt.text = str;
+            StartCoroutine(TextUpdates());
         }
 
         // Update is called once per frame
@@ -39,10 +37,24 @@ namespace HeadsUpDisplay {
 
             if (cellCount > tempCount)
             {
-                var str = cellCount.ToString();
-                myTxt.text = str;
+                // var str = cellCount.ToString();
+                // myTxt.text = str;
                 tempCount = cellCount;
             }
+        }
+
+        private IEnumerator TextUpdates()
+        {
+            yield return new WaitForSecondsRealtime(5);
+            string str = "";
+            str += "<b>Welcome to [app name?]</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(3);
+            str = "<b>Firstly, lets figure out navigation!</b>";
+            myTxt.text = str;
+            yield return new WaitForSecondsRealtime(3);
+            str = "<b>Hold your hands out in front of you and hold down the triggers</b>";
+            myTxt.text = str;
         }
     }
 }

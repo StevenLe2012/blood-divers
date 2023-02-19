@@ -179,12 +179,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4967737153089517458}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ff2be23f193b124ca594e60bb690b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoHandObject: {fileID: 0}
+  TwoHandObject: {fileID: 6655962455691613365, guid: 8af0616a830f4a547ba6d3508c95a7f3,
+    type: 3}
   cellObjectsUpdated: []
 --- !u!1 &5341866734532839951
 GameObject:
