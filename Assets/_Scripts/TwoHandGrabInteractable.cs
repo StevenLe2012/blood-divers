@@ -6,8 +6,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class TwoHandGrabInteractable : XRGrabInteractable
 {
     public List<XRSimpleInteractable> secondHandGrabPoints = new List<XRSimpleInteractable>();
+    public List<GameObject> cellObjects = new List<GameObject>();
     private XRBaseInteractor secondInteractor;
     private Quaternion attachInititalRotation;
+    public GameObject cellObject;
+    public Rigidbody rb;
     
     // Start is called before the first frame update
     void Start()
@@ -16,7 +19,6 @@ public class TwoHandGrabInteractable : XRGrabInteractable
         {
             item.onSelectEntered.AddListener(OnSecondHandGrab);
             item.onSelectExited.AddListener(OnSecondHandRelease);
-
         }
     }
 
@@ -26,20 +28,27 @@ public class TwoHandGrabInteractable : XRGrabInteractable
         
     }
 
-    public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
-    {
-        if (secondInteractor && selectingInteractor)
-        {
-            //Compute the rotation
-            selectingInteractor.attachTransform.rotation = Quaternion.LookRotation(secondInteractor.attachTransform.position - selectingInteractor.attachTransform.position);
-        }
-        base.ProcessInteractable(updatePhase);
-    }
+    // public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
+    // {
+    //     if (secondInteractor && selectingInteractor)
+    //     {
+    //         //Compute the rotation
+    //
+    //     }
+    //     base.ProcessInteractable(updatePhase);
+    // }
 
     public void OnSecondHandGrab(XRBaseInteractor interactor)
     {
         Debug.Log("SECOND HAND GRAB");
         secondInteractor = interactor;
+        //GameObject cell = Instantiate(cellObject, secondInteractor.transform);
+        GameObject instance = GameObject.Instantiate(cellObject) as GameObject;
+        instance.transform.position = secondInteractor.transform.position;
+        rb = instance.GetComponent<Rigidbody>();
+        rb.isKinematic = false;
+        rb.useGravity = false;
+        cellObjects.Add(instance);
     }
     
     public void OnSecondHandRelease(XRBaseInteractor interactor)
