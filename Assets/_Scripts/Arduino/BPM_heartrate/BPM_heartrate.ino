@@ -23,7 +23,7 @@ void setup() {
 
 	// Debugging window (easy to write data to LCD 16x2)
 	Serial.begin(9600);
-	Serial.println("Pulse rate detection started.");
+	// Serial.println("Pulse rate detection started.");
 }
 
 // ------------------------------------------------------------

@@ -25,12 +25,11 @@ public class CellMovement : MonoBehaviour
     {
         // transform.Translate(Vector3.forward * _speed);
         // Quaternion.RotateTowards(transform.rotation, _rotation, 1);
-        // var normalizedBPM = NormalizeBPM(ReadPort.Instance.GetBPM());
-        // if (normalizedBPM == 0)
-        // {
-        //     normalizedBPM = 1;
-        // }
-        var normalizedBPM = 1;
+        var normalizedBPM = NormalizeBPM(ReadPort.Instance.GetBPM());
+        if (normalizedBPM == 0)
+        {
+            normalizedBPM = 1;
+        }
         transform.Translate (Vector3.forward * (_speed * normalizedBPM), Space.World);
         transform.Rotate (Vector3.down * -2);
         transform.Rotate (Vector3.back * 1);
@@ -61,8 +60,8 @@ public class CellMovement : MonoBehaviour
     //     _rotation = rotation;
     // }
 
-    // private float NormalizeBPM(int BPM)
-    // {
-    //     return (float)(Math.Sqrt(BPM / 40f));
-    // }
+    private float NormalizeBPM(int BPM)
+    {
+        return (float)(Math.Sqrt(BPM / 40f));
+    }
 }
