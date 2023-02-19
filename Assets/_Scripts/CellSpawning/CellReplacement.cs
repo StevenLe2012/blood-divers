@@ -8,8 +8,9 @@ public class CellReplacement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        print("Someone has entered:");
         print(other.gameObject.name);
-        if (other.gameObject.tag == "cell") {
+        if (other.gameObject.CompareTag("cell")) {
             print("Cell Entered");
             Destroy(other.gameObject);
             brokenCell.GetComponent<SkinnedMeshRenderer>().enabled = true;
