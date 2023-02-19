@@ -39,8 +39,8 @@ namespace HeadsUpDisplay {
 
             if (cellCount > tempCount)
             {
-                // var str = cellCount.ToString();
-                // myTxt.text = str;
+                var str = cellCount.ToString();
+                myTxt.text = str;
                 tempCount = cellCount;
             }
         }
