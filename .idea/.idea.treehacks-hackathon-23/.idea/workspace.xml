@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4f930c7-5708-4018-9d53-856cf938db16" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TextUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/TextUpdate.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b4f930c7-5708-4018-9d53-856cf938db16" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05041d4f5ec242309356a6b3b04452e616e000/9a/1378694b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CellSpawning/CellMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CellSpawning/SpawnCells.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/ReadPort.cs" root0="FORCE_HIGHLIGHTING" />
