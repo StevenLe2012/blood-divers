@@ -42,7 +42,6 @@ public class TwoHandGrabInteractable : XRGrabInteractable
     {
         Debug.Log("SECOND HAND GRAB");
         secondInteractor = interactor;
-        //GameObject cell = Instantiate(cellObject, secondInteractor.transform);
         GameObject instance = GameObject.Instantiate(cellObject) as GameObject;
         instance.transform.position = secondInteractor.transform.position;
         rb = instance.GetComponent<Rigidbody>();
