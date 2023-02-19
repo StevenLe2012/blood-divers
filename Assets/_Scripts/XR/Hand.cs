@@ -68,7 +68,7 @@ public class Hand : MonoBehaviour {
                 _gripCurrent = Mathf.MoveTowards(_gripCurrent, _gripTarget, Time.deltaTime * speed);
                 _animator.SetFloat(_animatorFullHandID, _gripCurrent);
             }
-         }
+        }
 
 
     }
