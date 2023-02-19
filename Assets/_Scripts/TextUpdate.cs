@@ -47,7 +47,7 @@ namespace HeadsUpDisplay {
         {
             yield return new WaitForSecondsRealtime(8);
             string str = "";
-            str += "<b>Welcome to [app name?]</b>";
+            str += "<b>Welcome to Blood Divers</b>";
             myTxt.text = str;
             yield return new WaitForSecondsRealtime(5);
             str = "<b>Firstly, lets figure out navigation!</b>";
