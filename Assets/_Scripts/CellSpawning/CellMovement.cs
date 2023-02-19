@@ -25,7 +25,7 @@ public class CellMovement : MonoBehaviour
     {
         // transform.Translate(Vector3.forward * _speed);
         // Quaternion.RotateTowards(transform.rotation, _rotation, 1);
-        var normalizedBPM = NormalizeBPM(ReadPort.Instance.GetBPM());
+        var normalizedBPM = ReadPort.Instance.GetNormalizeBPM();
         if (normalizedBPM == 0)
         {
             normalizedBPM = 1;
@@ -59,9 +59,4 @@ public class CellMovement : MonoBehaviour
     // {
     //     _rotation = rotation;
     // }
-
-    private float NormalizeBPM(int BPM)
-    {
-        return (float)(Math.Sqrt(BPM / 40f));
-    }
 }

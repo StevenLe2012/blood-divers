@@ -59,4 +59,9 @@ public class ReadPort : MonoBehaviour
     {
         return BPM;
     }
+    
+    public float GetNormalizeBPM()
+    {
+        return (float)(Math.Sqrt(BPM / 40f)) * 1.5f;
+    }
 }
