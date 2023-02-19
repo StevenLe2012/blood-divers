@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4f930c7-5708-4018-9d53-856cf938db16" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.treehacks-hackathon-23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treehacks-hackathon-23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HUD_Proliferation.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HUD_Proliferation.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,8 +10,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SnapPrefab.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/TwoHandGrabInteractable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05041d4f5ec242309356a6b3b04452e616e000/9a/1378694b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CellSpawning/CellMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CellSpawning/SpawnCells.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/ReadPort.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.core-utils@2.1.1/Editor/XROriginEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.2.0/Editor/Interaction/Interactors/XRBaseInteractorEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@2.2.0/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -34,6 +35,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5458167&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -46,7 +48,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="E:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23 -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -54,7 +56,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="E:\Program Files\Unity\Hub\Editor\2022.2.7f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\emman\OneDrive\Documents\treehacks-hackathon-23" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -85,14 +87,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4f930c7-5708-4018-9d53-856cf938db16" name="Changes" comment="" />
+      <changelist id="59a61646-cf54-4417-8213-97249ba3d4cb" name="Changes" comment="" />
       <created>1676755781463</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676755781463</updated>
       <workItem from="1676755787253" duration="2195000" />
       <workItem from="1676758056963" duration="44000" />
-      <workItem from="1676785059317" duration="8938000" />
     </task>
     <servers />
   </component>
